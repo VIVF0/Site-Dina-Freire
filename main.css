@@ -107,10 +107,11 @@ button:hover{
     background-color: white;
     color: #f04e23;
 }
-th,tr{
+td,tr{
     text-align: center;
-    padding: 1.875rem;
     font-size: 1.75rem;
+    margin-bottom: 20rem;
+    margin-right: 2rem;
 }
 footer{
     background-color: #ff4500;
@@ -184,7 +185,6 @@ footer ul{
         width: 100%;
     }  
     table tr {
-        
         margin-top: -3.6rem;
     }
     table td {
