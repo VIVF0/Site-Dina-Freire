@@ -7,12 +7,10 @@ body{
     font-size:1.5rem;
 	box-sizing: border-box;
     min-height: 100vh; 
-    min-width: 48vh;
 }
 html{
     background-color: #e4e4aa;
     background-image: linear-gradient(62deg, #e4e4aa 33%, #ffd783 100%);
-    width: 100%;
 }
 nav{
     background-color: #ff4500;
@@ -36,8 +34,8 @@ li{
 }
 .biografia{
     width: 80%;
-    display: inline-block;
-    padding: 2%;
+    margin-right: auto;
+    margin-left: auto;
 }
 .biografia p{
     width: 45%;
@@ -46,8 +44,6 @@ li{
 }
 .foto_dina{
     width: 45%;
-    display:inline-block;
-    vertical-align:top;
     border-radius: 50%;
     margin-top: 2rem;
 }
@@ -60,12 +56,34 @@ a{
     margin-top: 4rem;
     background-color: #ff4500;
     background-image: linear-gradient(160deg, #ff4500 0%, #f5c800 57%);
-    min-width: 128vh;
     width: 100%;
+}
+.marcacao{
+    width: 30rem;
+    float: left;
+}
+.barra{
+    font-size: 3rem;
+    color: white;
+    margin-top: 1rem;
+    float: left;
+}
+.titulo{
+    font-size: 3rem;
+    color: white;
+    margin-top: 1.2rem;
+    float: right;
+}
+.oficina{
+    width: 80%;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
 }
 .oficinas img{
     border-radius: 50%;
-    width: 70%;
+    width: 10rem;
 }
 .oficinas a{
     text-decoration: none;
@@ -74,23 +92,6 @@ a{
 .oficinas a:hover{
     text-decoration: none;
     color: black;
-}
-.barra{
-    font-size: 8rem;
-    display: inline-block;
-    float: left;
-    color: white;
-}
-.titulo{
-    font-size: 5rem;
-    margin-top: 2.3rem;
-    color: white;
-}
-.oficina{
-    width: 80%;
-    margin-top: 5rem;
-    margin-left: auto;
-    margin-right: auto;
 }
 button{
     width: 8rem;
@@ -106,9 +107,6 @@ button:hover{
     background-color: white;
     color: #f04e23;
 }
-table{
-    
-}
 th,tr{
     text-align: center;
     padding: 1.875rem;
@@ -120,7 +118,6 @@ footer{
     display: inline-block;
     width: 100%;
     text-align: center;
-    min-width: 128vh;
 }
 footer li{
     margin-right: 5rem;
@@ -128,4 +125,71 @@ footer li{
 footer ul{
     margin-left: auto;
     margin-right: auto;
+}
+@media screen and (max-width: 144vh) {
+    li{
+        color: white;
+    }
+    .content{
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .biografia p{
+        width: 80%;
+        float: left;
+        text-overflow: clip;
+        text-align: justify;
+        font-size: 1rem;
+        padding: 1.6rem;
+    }
+    .biografia{
+        width: auto;
+    }
+    .foto_dina{
+        width: 80%;
+        border-radius: 50%;
+        padding: 1.6rem;
+        margin-top: -1rem;
+        margin-bottom: -3rem;
+    }
+    .marcacao{
+        width: 66%;
+        float: left;
+    }
+    .barra{
+        font-size: 80%;
+    }
+    .titulo{
+        font-size: 80%;
+    }
+    .oficinas{
+        margin-top: -1rem;
+    }
+    .oficina{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    button{
+        font-size: 1rem;
+        background-color: black;
+        border-style: none;
+        color: #f04e23;
+        border-radius: 5%;
+    }
+    table {
+        border: 0;
+        width: 100%;
+    }  
+    table tr {
+        
+        margin-top: -3.6rem;
+    }
+    table td {
+        margin-bottom: 0.8rem;
+        display: block;
+        font-size: 0.6em;
+        text-align: center;
+    }
 }
