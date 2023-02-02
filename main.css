@@ -154,7 +154,7 @@ footer ul{
         margin-bottom: -3rem;
     }
     .marcacao{
-        width: 66%;
+        width: 11.8rem;
         float: left;
     }
     .barra{
@@ -170,6 +170,7 @@ footer ul{
         width: 80%;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 2rem;
     }
     button{
         font-size: 1rem;
